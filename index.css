@@ -1,0 +1,149 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+   --Ld: 'Lexend Deca', sans-serif;
+   --bs: 'Big Shoulders Display', cursive;
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+body {
+   background: hsl(0, 0%, 95%);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main {
+   width: fit-content;
+   height: fit-content;
+}
+
+.card-container {
+   margin-top: 2em;
+   width: fit-content;
+   height: fit-content;
+   margin-bottom: 2em;
+}
+
+.card {
+   width: 15em;
+   height: 23em;
+   padding: 3em;
+}
+
+.card-1 {
+   background: hsl(31, 77%, 52%);
+   border-radius: 0.5em 0.5em 0 0;
+}
+
+.card-2 {
+   background: hsl(184, 100%, 22%);
+   border-radius: 0 0 0 0;
+   }
+
+.card-3 {
+   background:  hsl(179, 100%, 13%);
+   border-radius:0 0 0.5em 0.5em;
+   }
+
+.car-container {
+   width: 4em;
+   height: 2.5em;
+}
+
+.car {
+   width: 100%;
+   height: 100%;
+}
+
+.heading {
+   font-family: var(--bs);
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: hsl(0, 0%, 95%);
+   margin-top: 0.9em;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+}
+
+.para {
+   color: hsl(0, 0%, 100%, 0.75);
+   margin-top: 2em;
+   font-family: var(--Ld);
+   line-height: 1.6rem;
+   font-size: 15px;
+   padding-right: 1em;
+   font-weight: 400;
+}
+
+.button {
+   padding: 1em;
+   border-radius: 2em;
+   margin-top: 2em;
+   width: 10em;
+   font-size: 15px;
+   border: 2px solid hsl(0, 0%, 95%);
+   font-family: var(--Ld);
+   font-weight: 400;
+   background: hsl(0, 0%, 95%);
+}
+
+.button-1 {
+   color:hsl(31, 77%, 52%);
+}
+
+.button-2 {
+   color: hsl(184, 100%, 22%);
+}
+
+.button-3 {
+   color: hsl(179, 100%, 13%);
+}
+
+.button-1:hover {
+   background: hsl(31, 77%, 52%);
+   color: hsl(0, 0%, 95%);
+}
+
+.button-2:hover {
+   background: hsl(184, 100%, 22%);
+   color: hsl(0, 0%, 95%);
+}
+
+.button-3:hover {
+   background: hsl(179, 100%, 13%);
+   color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width:1024px) {
+   .card-container {
+      display: flex;
+   }
+
+   .card {
+      width: 14em;
+      height: 27em;
+      padding: 3em
+   }
+
+   .card-1 {
+      border-radius: 0.5em 0 0 0.5em;
+   }
+
+   .card-3 {
+      border-radius: 0 0.5em 0.5em 0;
+   }
+
+   .button {
+      margin-top: 6em;
+   }
+}
